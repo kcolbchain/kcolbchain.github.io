@@ -17,6 +17,9 @@ text-align: center;}
 	text-align: center;
 	border-color: black;
 }
+#detail{
+	font-size: small;
+}
 .paragraph2{
 	padding: 50px;
 	margin-bottom: 20px;
