@@ -1,0 +1,75 @@
+@import 'https://fonts.googleapis.com/css?family=Cabin';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@font-face {
+	font-family: Avenir;
+	src: url(D:/kcolbchain/fonts/AvenirNextLTPro-Regular.otf);
+}
+#wholepage{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+body{margin-left: 0px ;
+	margin-right: 0px ;
+	background: black;
+	display: inline;
+color: #099999;
+font-family: 'Avenir', sans-serif;
+font-size: 150%;
+text-align: center;}
+#logo{
+	text-align: center;
+	border-color: black;
+}
+.paragraph2{
+	padding: 50px;
+	margin-bottom: 20px;
+}
+.paragraph2 p{
+	display: inline;
+}
+span.addui-Typing-text{
+	display: inline;	
+}
+h1{
+	text-align: center;
+	font-size: 100%;
+	font-family: 'Avenir', sans-serif;
+	font-weight: 100;
+	color: #099999;
+}
+.heading h1{
+	font-size:125%;		
+}
+#addi{
+	color: white;
+	font-size: 50%;
+	margin-bottom: 5%;
+}
+#detail{
+	line-height: 300%;
+}
+.addui-Typing-caret {
+  position: inherit;
+  top: -1px;
+  padding: 0 1px;
+}
+.addui-Typing-blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes
+  blink-animation {  to {
+   visibility: hidden;
+  }
+}
+
+@-webkit-keyframes
+  blink-animation {  to {
+   visibility: hidden;
+  }
+}
+#buttons li{
+	text-align: center;
+	padding-right: 40px;
+}
