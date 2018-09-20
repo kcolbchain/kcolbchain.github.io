@@ -11,7 +11,7 @@ body{margin-left: 0px ;
 	background-color: black;
 color: #19DBDB;
 font-family: 'Avenir', sans-serif;
-font-size: 150%;
+font-size: 200%;
 text-align: center;}
 #logo{
 	text-align: center;
@@ -20,12 +20,14 @@ text-align: center;}
 #detail{
 	font-size: small;
 }
+#paragraph1{line-height: 10vh;}
 .paragraph2{
 	padding: 50px;
 	margin-bottom: 20px;
 }
 .paragraph2 p{
 	display: inline;
+	line-height: 20vh;
 }
 span.addui-Typing-text{
 	display: inline;	
@@ -37,6 +39,9 @@ h1{
 	font-weight: 100;
 	color: #19DBDB;
 }
+.section{
+	height: 100vh;
+}
 .heading h1{
 	font-size:125%;		
 }
@@ -46,7 +51,7 @@ h1{
 	margin-bottom: 5%;
 }
 #detail{
-	line-height: 300%;
+	line-height: 16vh;
 }
 .addui-Typing-caret {
   position: inherit;
