@@ -80,7 +80,7 @@ if(typeof($add)=="undefined")var $add={version:{},auto:{disabled:false}};Math.__
     this.renderer = function(){
       var $typing = $("<span class='addui-Typing'><span class='addui-Typing-text'>"+this.current+"</span></span>");
       if(this.settings.caret){
-        $("<span class='addui-Typing-caret'>|</span>").appendTo($typing);
+        $("<span class='addui-Typing-caret'>_</span>").appendTo($typing);
       }
       return $typing;
     };

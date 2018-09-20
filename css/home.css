@@ -4,15 +4,11 @@
 	font-family: Avenir;
 	src: url(D:/kcolbchain/fonts/AvenirNextLTPro-Regular.otf);
 }
-#wholepage{
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;	
-}
+
 body{margin-left: 0px ;
 	margin-right: 0px ;
-	background: black;
 	display: inline;
+	background-color: black;
 color: #099999;
 font-family: 'Avenir', sans-serif;
 font-size: 150%;
@@ -63,7 +59,10 @@ h1{
    visibility: hidden;
   }
 }
-
+a{
+	text-decoration: none;
+	color: inherit;
+}
 @-webkit-keyframes
   blink-animation {  to {
    visibility: hidden;
