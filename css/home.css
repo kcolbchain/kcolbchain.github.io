@@ -17,9 +17,21 @@ text-align: center;}
 	text-align: center;
 	border-color: black;
 }
+#logo2{
+	padding-top: 8%;
+}
 .sticky{
 	position: fixed;
-	top: 7%;
+	top: 0;
+	width: 100%;
+}
+.sticky + .content {
+  padding-top: 7%;
+}
+#navbar{
+	overflow: hidden;
+	display: block;
+	background-color: black;
 }
 ul{
 	width: 90%;
@@ -76,10 +88,6 @@ ul li a{
 	color: inherit;
 	cursor: pointer;
 }
-
-#detail{
-	font-size: small;
-}
 #paragraph1{line-height: 5vh;}
 .paragraph2{
 	padding: 50px;
@@ -109,7 +117,9 @@ h1{
 	margin-bottom: 2%;
 }
 #detail{
-	line-height: 12vh;
+	line-height: 5vh;
+	font-size: large;
+	color: white;
 }
 footer {
 	width: 100%;
