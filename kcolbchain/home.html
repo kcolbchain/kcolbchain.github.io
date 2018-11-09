@@ -8,44 +8,18 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="Obj.js"></script>
 <script src="addTyping.js"></script>
-<script>
-	function ScrollTo(target, speed, timeout) {
-
-  if (!timeout) timeout = 0;
-  if (!speed) speed = 1000;
-
-  if (typeof target !== "undefined") {
-    //target = target.replace("#", ".");
-    //target = $(document.body).find(target);
-    setTimeout(function() {
-      $('html,body').animate({
-        scrollTop: $(target).offset().top - 140
-      }, speed);
-    }, timeout);
-  }
-}
-
-$("#navbar > nav > ul > li > a").click(function(e) {
-  // Prevent a page reload when a link is pressed
-  e.preventDefault();
-  // Call the scroll function
-  ScrollTo($(this).attr("href"), 0, 0); // target, speed, timeout
-});
-</script>
 <body>
 	<div id="wholepage">
 	<div class="section">
-	<div id="navbar">
 	<nav>
 			<ul>
 				<li><a href="#"><img src="images/IMG-20180725-WA0002 (2).png" width="18%"></a></li>
-				<li><a id="businesslink" href="#business">Business</a></li>
-				<li><a id="gyaanlink" href="#gyaan">Gyaan</a></li>
+				<li><a onclick="scrollWin(0, 0.93*screen.height)">Business</a></li>
+				<li><a onclick="scrollWin(0, 1.8*screen.height)">Gyaan</a></li>
 				
 			</ul>
 		</nav>
-	</div>
-	<div class="content">	
+		
 	<div id="logo">
 		<img src="images/IMG-20180725-WA0002 (2).png" width="14%" height="15%">
 	</div>
@@ -57,27 +31,13 @@ $("#navbar > nav > ul > li > a").click(function(e) {
   <span><h1>Here.</h1></span>
 </div>
 </div>
-<div class="section" id="business">
+</div>
+<div class="section">
 <div id="logo2"><img src="images/IMG-20180725-WA0002 (2).png" width="5%" height="5%"></div>
-<<<<<<< HEAD
 <div class="heading"><h1><a href="#"> BUSINESS </a></h1></div>
-<p id="detail">Build new business models on blockchain<br>Build for free and open internet<br>Move to enterprise architecture of Future<br>Work with best blockchain brains<br>
-<ul>
-		<li>ETHERUM</li>
-		<li>HYPERLEDGER</li>
-		<li>EOS</li>
-		<li>AETERNITY</li>
-		<li>SMART CONTACTS</li>
-		<li>TOKEN</li>
-		<li>ICO</li>
-	</ul>
-</p>
-<button class="button" id="business-button" onclick="window.open('https://goo.gl/forms/c88fNHCGb86bdB9A3')"><h1>Talk to Blockchain Expert</h1></button></div>
-<div class="section" id="gyaan">
-=======
-<div class="heading"><h1> BUSINESS </h1></div>
-<p id="detail">Build new business models on blockchain<br>Build for free and open internet<br>Move to enterprise architecture of Future<br>Work with top blockchain brains</p>
->>>>>>> 53bcc6709193242d89150e2f6cfe4e6c4c4e0ffe
+<p id="detail">Build new business models on blockchain<br>Build for free and open internet<br>Move to enterprise architecture of Future<br>Work with best blockchain brains</p></div>
+<button class="button" id="business-button" onclick="window.open('https://goo.gl/forms/c88fNHCGb86bdB9A3')"><h1>Talk to Blockchain Expert</h1></button>
+<div class="section">
 <div id="logo2"><img src="images/IMG-20180725-WA0002 (2).png" width="5%" height="5%"></div>
 <div class="heading"><h1><a href="#"> GYAAN </a></h1></div>
 <div id="additional">
@@ -85,15 +45,12 @@ $("#navbar > nav > ul > li > a").click(function(e) {
 </div>
 <p id="detail">
 	<ul>
-		<li>DEVELOPERS</li>
-		<li>ARCHITECTURE</li>
-		<li>DESIGN</li>
-		<li>SECURITY</li>
-		<li>BUSINESS APPLICATIONS</li>
-	</ul></p>
+		<li><a href="#">DEVELOPERS</a></li>
+		<li><a href="#">ARCHITECTURE</a></li>
+		<li><a href="#">DESIGN</a></li></ul></p>
 <button class="button" id="gyaan-button" onclick="window.open('https://goo.gl/forms/d3Xt26OzZ0zsyWRH3')"><h1>Join Gyaan Network</h1></button>
 </div>
-</div>
+
 <footer>
       <p id="copyrights">&copy; 2018 Kcolbchain </p>
       <p id="mail">Mail us:<a href="mailto:rahul@kcolbchain.com"> rahul@kcolbchain.com</a></p>
@@ -102,10 +59,12 @@ $("#navbar > nav > ul > li > a").click(function(e) {
 </body>
 
  <script>
- 
+ 	function scrollWin(x, y) {
+    window.scrollBy(x, y);
+}
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById("menubar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
