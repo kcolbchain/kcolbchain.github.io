@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @font-face {
 	font-family: Avenir;
-	src: url(fonts/AvenirNextLTPro-Regular.otf);
+	src: url('fonts/AvenirNextLTPro-Regular.otf') format('opentype');
 }
 
 body{margin-left: 0px ;
@@ -156,7 +156,7 @@ a{
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @font-face {
 	font-family: Avenir;
-	src: url(D:/kcolbchain/fonts/AvenirNextLTPro-Regular.otf);
+	src: url('fonts/AvenirNextLTPro-Regular.otf') format('opentype');
 }
 ul{
 	width: 90%;
