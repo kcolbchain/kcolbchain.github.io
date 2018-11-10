@@ -4,7 +4,7 @@
 	font-family: Avenir;
 	src: url('fonts/AvenirNextLTPro-Regular.otf') format('opentype');
 }
-
+#wholepage{max-width: 100%;}
 body{margin-left: 0px ;
 	margin-right: 0px ;
 	display: inline;
