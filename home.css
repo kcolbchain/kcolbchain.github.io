@@ -19,6 +19,9 @@ text-align: center;}
 	padding-top: 20%;
 	padding-bottom: 7%;
 }
+.sections{
+	padding-top: 20%;
+}
 #logo2{
 	padding-top: 8%;
 }
@@ -39,7 +42,8 @@ text-align: center;}
 nav ul {
 	overflow: hidden;
     list-style-type: none;
-	padding-left: 5%;
+	padding-left: 9%;
+	padding-right: 0%;
 	margin-bottom: -13%;
 }
 nav ul li{
@@ -161,6 +165,9 @@ a{
 @font-face {
 	font-family: Avenir;
 	src: url('fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+}
+.sections{
+	padding-top: 0;
 }
 ul{
 	width: 90%;
